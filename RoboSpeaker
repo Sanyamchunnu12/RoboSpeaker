@@ -1,0 +1,10 @@
+import win32com.client as wincom
+
+
+speak = wincom.Dispatch("SAPI.SpVoice")
+print('welcome to RoboSpeaker.Created by Sanyam Jain')
+
+text = input('Enter the text you want to speak: ')
+
+
+speak.Speak(text)
